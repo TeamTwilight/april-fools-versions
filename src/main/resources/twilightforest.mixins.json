@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "package": "twilightforest.mixin",
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "AbstractSoundInstanceMixin",
+    "CreateWorldScreenMixin",
+    "DeathScreenMixin",
+    "GuiMixin",
+    "MinecraftMixin",
+    "OptionsScreenMixin",
+    "PlayerRednererMixin",
+    "ShareToLanScreenMixin",
+    "SplashManagerMixin",
+    "WorldOpenFlowsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "twilightforest.mixin-refmap.json"
+}

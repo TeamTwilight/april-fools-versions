@@ -1,0 +1,110 @@
+{
+  "parent": "twilightforest:progress_lich",
+  "criteria": {
+    "naga": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "twilightforest:naga"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "previous_progression": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "advancements": {
+                  "twilightforest:progress_lich": true
+                }
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tick"
+    },
+    "scale": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:naga_scale"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "trophy": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "twilightforest:naga_trophy"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "was_in_fight": {
+      "conditions": {
+        "hurt_entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "twilightforest:naga"
+            }
+          }
+        ]
+      },
+      "trigger": "twilightforest:hurt_boss"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.twilightforest.kill_naga.desc",
+      "with": [
+        {
+          "translate": "entity.twilightforest.naga"
+        },
+        {
+          "translate": "item.twilightforest.naga_scale"
+        }
+      ]
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "twilightforest:naga_trophy"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.twilightforest.kill_naga"
+    }
+  },
+  "requirements": [
+    [
+      "naga",
+      "trophy",
+      "scale",
+      "was_in_fight"
+    ],
+    [
+      "previous_progression"
+    ]
+  ]
+}
