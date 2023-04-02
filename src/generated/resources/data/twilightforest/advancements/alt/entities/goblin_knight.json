@@ -1,0 +1,181 @@
+{
+  "parent": "twilightforest:alt/root",
+  "criteria": {
+    "hurt_by_indirect": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "twilightforest:lower_goblin_knight"
+          }
+        }
+      }
+    },
+    "slain_by": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "twilightforest:lower_goblin_knight"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "hurt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "twilightforest:lower_goblin_knight"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "slay": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "twilightforest:lower_goblin_knight"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "summon": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "twilightforest:lower_goblin_knight"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "tame": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "twilightforest:lower_goblin_knight"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "hurt_by_indirect_alt": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "twilightforest:upper_goblin_knight"
+          }
+        }
+      }
+    },
+    "slain_by_alt": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "twilightforest:upper_goblin_knight"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "hurt_alt": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "twilightforest:upper_goblin_knight"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "slay_alt": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "twilightforest:upper_goblin_knight"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "summon_alt": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "twilightforest:upper_goblin_knight"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "tame_alt": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "twilightforest:upper_goblin_knight"
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "hurt_by_indirect",
+      "slain_by",
+      "hurt",
+      "slay",
+      "summon",
+      "tame",
+      "hurt_by_indirect_alt",
+      "slain_by_alt",
+      "hurt_alt",
+      "slay_alt",
+      "summon_alt",
+      "tame_alt"
+    ]
+  ]
+}

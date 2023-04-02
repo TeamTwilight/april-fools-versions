@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#6#",
+    "6%6",
+    "#6#"
+  ],
+  "key": {
+    "6": {
+      "tag": "forge:gems/carminite"
+    },
+    "#": {
+      "item": "twilightforest:encased_towerwood"
+    },
+    "%": {
+      "tag": "forge:ores/redstone"
+    }
+  },
+  "result": {
+    "item": "twilightforest:carminite_reactor"
+  }
+}
