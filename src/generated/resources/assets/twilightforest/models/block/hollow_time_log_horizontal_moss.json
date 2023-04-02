@@ -1,8 +1,0 @@
-{
-  "parent": "twilightforest:block/hollow_log_moss",
-  "textures": {
-    "top": "twilightforest:block/time_log_top",
-    "side": "twilightforest:block/time_log",
-    "inner": "twilightforest:block/stripped_time_log"
-  }
-}

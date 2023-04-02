@@ -1,8 +1,0 @@
-{
-  "parent": "twilightforest:block/vertical_hollow_log",
-  "textures": {
-    "top": "twilightforest:block/canopy_log_top",
-    "side": "twilightforest:block/canopy_log",
-    "inner": "twilightforest:block/stripped_canopy_log"
-  }
-}
